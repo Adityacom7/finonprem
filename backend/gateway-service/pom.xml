@@ -18,19 +18,19 @@
     </properties>
     
     <dependencies>
-        <!-- Web framework for REST APIs -->
+        <!-- Use WebFlux (reactive) instead of Web (MVC) for Gateway -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
         
-        <!-- API Gateway for routing requests -->
+        <!-- API Gateway for routing -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
         
-        <!-- Health checks and monitoring -->
+        <!-- Health checks -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -48,6 +48,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
