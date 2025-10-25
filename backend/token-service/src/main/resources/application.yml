@@ -16,4 +16,5 @@ spring:
 
 logging:
   level:
+    org.springframework: WARN
     com.payplus: DEBUG
