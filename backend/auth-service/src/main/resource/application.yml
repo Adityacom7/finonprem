@@ -1,0 +1,20 @@
+server:
+  port: 8081  # Auth service will run on port 8081
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://172.31.32.191:3306/payplus?useSSL=false
+    username: payplus_user
+    password: payplus_pass123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Auto-create/update database tables
+    show-sql: true      # Log SQL queries for debugging
+
+# JWT configuration for token generation
+jwt:
+  secret: payplus-secret-key-2024
+  expiration: 86400000  # 24 hours in milliseconds

@@ -1,0 +1,10 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: token-service
+  datasource:
+    url: jdbc:mysql://172.31.32.191:3306/payplus?useSSL=false
+    username: payplus_user
+    password: payplus_pass123
+    driver-class-name: com.mysql.cj.jdbc.Driver
