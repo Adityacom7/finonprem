@@ -1,10 +1,22 @@
 server:
   port: 8082
+
 spring:
   application:
     name: payment-service
   datasource:
-    url: jdbc:mysql://172.31.32.191:3306/payplus?useSSL=false
+    url: jdbc:mysql://172.31.32.191:3306/payplus?useSSL=false&allowPublicKeyRetrieval=true
     username: payplus_user
     password: payplus_pass123
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+payment:
+  commission-rate: 0.05
+
+logging:
+  level:
+    com.payplus: DEBUG
