@@ -12,6 +12,3 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
-
-
-arjun ByteLengthQueuingStrategy
